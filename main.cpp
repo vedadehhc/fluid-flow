@@ -5,6 +5,7 @@
 #include <SDL_mixer.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <parallel/algorithm>
 
 #include "Screen.h"
 
@@ -25,7 +26,9 @@ bool processEvent(SDL_Event &e)
 }
 
 int main(int argc, char *args[])
-{
+{   
+    // __gnu_parallel::for_each()
+    
     Screen screen(700, 700, "Ants");
 
     if (!screen.init())

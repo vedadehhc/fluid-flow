@@ -34,10 +34,6 @@ DEBUG_BUILD_PATH = .\debug
 #This is the target that compiles our executable
 all: release 
 
-fresh_release: clean_release init_release release
-
-fresh_debug: clean_debug init_debug debug
-
 release: $(SOURCES)
 	$(CC) $(OBJS) $(INCLUDE_PATHS) $(LIBRARY_PATHS) $(RELEASE_COMPILER_FLAGS) $(LINKER_FLAGS) -o $(RELEASE_BUILD_PATH)\app
 
