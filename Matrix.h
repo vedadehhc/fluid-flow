@@ -17,7 +17,7 @@ namespace dev
     {
     private:
         int rows, cols;
-        T *m_Arr[];
+        T *m_Arr;
 
         int getIndex(int r, int c);
 

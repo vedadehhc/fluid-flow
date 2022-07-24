@@ -126,4 +126,7 @@ namespace dev
     {
         return m_Arr[getIndex(loc.first, loc.second)];
     }
+
+    template class Matrix<float>;
+    template class Matrix<int>;
 }
